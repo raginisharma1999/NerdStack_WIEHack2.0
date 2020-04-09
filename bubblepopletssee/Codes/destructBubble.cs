@@ -10,7 +10,7 @@ public class destructBubble : MonoBehaviour
    
     void Start()
     {
-       
+       //displays the bubbles on screen
         rend = GetComponent<Renderer>();
         rend.enabled = true;
     }
@@ -18,7 +18,7 @@ public class destructBubble : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // gameObject.AddForce(-Physics.gravity);
+       
         
     }
 
@@ -30,10 +30,10 @@ public class destructBubble : MonoBehaviour
 
     void OnMouseDown()
     {
-        myFx.PlayOneShot(clickFx);
-         rend.enabled = false;
+        myFx.PlayOneShot(clickFx); //plays soothing sound effect
+         rend.enabled = false;  //makes the bubble invisible
 
-       // StartCoroutine(ShowAndHide(object, 5.0f));
+       
 
 
 
