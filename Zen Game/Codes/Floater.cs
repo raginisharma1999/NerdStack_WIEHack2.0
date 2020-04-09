@@ -4,7 +4,7 @@ using System.Collections;
 // Makes objects float up & down while gently spinning.
 public class Floater : MonoBehaviour
 {
-    
+    // User Inputs
     public float degreesPerSecond = 15.0f;
     public float amplitude = 0.5f;
     public float frequency = 1f;
@@ -29,7 +29,7 @@ public class Floater : MonoBehaviour
         // Float up/down with a Sin()
         tempPos = posOffset;
         tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
-      
+       // tempPos.x += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
 
         transform.position = tempPos;
     }

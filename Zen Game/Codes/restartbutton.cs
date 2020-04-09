@@ -8,7 +8,7 @@ public class restartbutton : MonoBehaviour
 
         public void RestartGame()
     {
-        SceneManager.LoadScene("SampleScene"); //reloads the scene
+        SceneManager.LoadScene("SampleScene");
     }
     void Start()
     {
